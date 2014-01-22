@@ -32,10 +32,10 @@ ClanLib-2.3.7
 
 ==== How? ====
 
-the code provided under MIT license:
-See the file MIT_License.txt or this URL:
-http://opensource.org/licenses/mit-license.php
-This software is provided "AS IS", without warranty of any kind.
+The code is provided under the Zlib license:
+See the file "LICENSE.txt" or this URL:
+ http://opensource.org/licenses/Zlib
+This software is provided without warranty of any kind.
 
 ==== Why? ====
 
