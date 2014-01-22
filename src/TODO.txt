@@ -1,0 +1,2 @@
+    #include <ClanLib/mikmod.h> 
+    CL_SetupMikMod setup_mikmod;

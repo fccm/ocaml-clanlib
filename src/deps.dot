@@ -1,0 +1,161 @@
+digraph g {
+    graph [
+        rankdir = LR
+        bgcolor= grey40
+    ]
+    node [
+        fontsize = "10"
+        fillcolor = grey60
+        color = green
+        shape = box
+        style = "rounded,filled"
+        penwidth = 1.2
+    ]
+  CL_Angle [ label = "CL_Angle" ]
+  CL_BlendEquation [ label = "CL_BlendEquation" ]
+  CL_BlendFunc [ label = "CL_BlendFunc" ]
+  CL_BlendMode [ label = "CL_BlendMode" ]
+  CL_Colorf [ label = "CL_Colorf" ]
+  CL_Color [ label = "CL_Color" ]
+  CL_Console [ label = "CL_Console" ]
+  CL_DataBuffer [ label = "CL_DataBuffer" ]
+  CL_DisplayTarget [ label = "CL_DisplayTarget" ]
+  CL_DisplayWindowDescription [ label = "CL_DisplayWindowDescription" ]
+  CL_Rect [ label = "CL_Rect" ]
+  CL_Size [ label = "CL_Size" ]
+  CL_DisplayWindow [ label = "CL_DisplayWindow" ]
+  CL_GraphicContext [ label = "CL_GraphicContext" ]
+  CL_InputContext [ label = "CL_InputContext" ]
+  CL_DomDocument [ label = "CL_DomDocument" ]
+  CL_DomElement [ label = "CL_DomElement" ]
+  CL_DomNode [ label = "CL_DomNode" ]
+  CL_File [ label = "CL_File" ]
+  CL_Draw [ label = "CL_Draw" ]
+  CL_Gradient [ label = "CL_Gradient" ]
+  CL_Pointf [ label = "CL_Pointf" ]
+  CL_Quadf [ label = "CL_Quadf" ]
+  CL_Texture [ label = "CL_Texture" ]
+  CL_IODevice [ label = "CL_IODevice" ]
+  CL_FontDescription [ label = "CL_FontDescription" ]
+  CL_Font [ label = "CL_Font" ]
+  CL_Sizef [ label = "CL_Sizef" ]
+  CL_Font_Vector [ label = "CL_Font_Vector" ]
+  CL_Type [ label = "CL_Type" ]
+  CL_Image [ label = "CL_Image" ]
+  CL_PixelBuffer [ label = "CL_PixelBuffer" ]
+  CL_InputDevice [ label = "CL_InputDevice" ]
+  CL_Key [ label = "CL_Key" ]
+  CL_Point [ label = "CL_Point" ]
+  CL_InputEvent [ label = "CL_InputEvent" ]
+  CL_Mouse [ label = "CL_Mouse" ]
+  CL_InputEventQueue [ label = "CL_InputEventQueue" ]
+  CL_IODevice_Memory [ label = "CL_IODevice_Memory" ]
+  CL_KeepAlive [ label = "CL_KeepAlive" ]
+  CL_LineMath [ label = "CL_LineMath" ]
+  CL_Mat4f [ label = "CL_Mat4f" ]
+  CL_NetGameClient [ label = "CL_NetGameClient" ]
+  CL_NetGameConnection [ label = "CL_NetGameConnection" ]
+  CL_NetGameEventDispatcher [ label = "CL_NetGameEventDispatcher" ]
+  CL_NetGameEvent [ label = "CL_NetGameEvent" ]
+  CL_NetGameEventValue [ label = "CL_NetGameEventValue" ]
+  CL_NetGameServer [ label = "CL_NetGameServer" ]
+  CL_Palette [ label = "CL_Palette" ]
+  CL_PerlinNoise [ label = "CL_PerlinNoise" ]
+  CL_VirtualDirectory [ label = "CL_VirtualDirectory" ]
+  CL_PixelFormat [ label = "CL_PixelFormat" ]
+  CL_PrimitivesArray [ label = "CL_PrimitivesArray" ]
+  CL_Vec3f [ label = "CL_Vec3f" ]
+  CL_Quad [ label = "CL_Quad" ]
+  CL_Rectf [ label = "CL_Rectf" ]
+  CL_RoundedRect [ label = "CL_RoundedRect" ]
+  CL_SetupCore [ label = "CL_SetupCore" ]
+  CL_SetupDisplay [ label = "CL_SetupDisplay" ]
+  CL_SetupGL [ label = "CL_SetupGL" ]
+  CL_SetupNetwork [ label = "CL_SetupNetwork" ]
+  CL_SetupSound [ label = "CL_SetupSound" ]
+  CL_SetupVorbis [ label = "CL_SetupVorbis" ]
+  CL_SocketName [ label = "CL_SocketName" ]
+  CL_Sprite [ label = "CL_Sprite" ]
+  CL_String16 [ label = "CL_String16" ]
+  CL_System [ label = "CL_System" ]
+  CL_TCPConnection [ label = "CL_TCPConnection" ]
+  CL_TCPListen [ label = "CL_TCPListen" ]
+  CL_Timer [ label = "CL_Timer" ]
+  CL_UDPSocket [ label = "CL_UDPSocket" ]
+  CL_Version [ label = "CL_Version" ]
+  CL_XMLTokenizer [ label = "CL_XMLTokenizer" ]
+  CL_XMLToken [ label = "CL_XMLToken" ]
+
+  CL_BlendMode -> CL_BlendEquation
+  CL_BlendMode -> CL_BlendFunc
+  CL_BlendMode -> CL_Colorf
+  CL_DisplayWindowDescription -> CL_Rect
+  CL_DisplayWindowDescription -> CL_Size
+  CL_DisplayWindow -> CL_DisplayTarget
+  CL_DisplayWindow -> CL_DisplayWindowDescription
+  CL_DisplayWindow -> CL_GraphicContext
+  CL_DisplayWindow -> CL_InputContext
+  CL_GraphicContext -> CL_Colorf
+  CL_GraphicContext -> CL_Rect
+  CL_GraphicContext -> CL_Size
+  CL_GraphicContext -> CL_Type
+  CL_InputContext -> CL_InputDevice
+  CL_DomDocument -> CL_DomElement
+  CL_DomDocument -> CL_DomNode
+  CL_DomDocument -> CL_File
+  CL_DomElement -> CL_DomNode
+  CL_File -> CL_IODevice
+  CL_Draw -> CL_Colorf
+  CL_Draw -> CL_Gradient
+  CL_Draw -> CL_GraphicContext
+  CL_Draw -> CL_Pointf
+  CL_Draw -> CL_Quadf
+  CL_Draw -> CL_Texture
+  CL_Gradient -> CL_Colorf
+  CL_Texture -> CL_File
+  CL_Texture -> CL_GraphicContext
+  CL_Font -> CL_Colorf
+  CL_Font -> CL_FontDescription
+  CL_Font -> CL_GraphicContext
+  CL_Font -> CL_Sizef
+  CL_Font_Vector -> CL_Colorf
+  CL_Font_Vector -> CL_FontDescription
+  CL_Font_Vector -> CL_GraphicContext
+  CL_Font_Vector -> CL_Sizef
+  CL_Image -> CL_GraphicContext
+  CL_Image -> CL_PixelBuffer
+  CL_Image -> CL_Rect
+  CL_Image -> CL_Texture
+  CL_PixelBuffer -> CL_IODevice
+  CL_PixelBuffer -> CL_VirtualDirectory
+  CL_InputDevice -> CL_Key
+  CL_InputDevice -> CL_Point
+  CL_InputEvent -> CL_Key
+  CL_InputEvent -> CL_Mouse
+  CL_InputEvent -> CL_Point
+  CL_InputEventQueue -> CL_InputDevice
+  CL_InputEventQueue -> CL_InputEvent
+  CL_IODevice_Memory -> CL_DataBuffer
+  CL_IODevice_Memory -> CL_IODevice
+  CL_LineMath -> CL_Pointf
+  CL_NetGameEvent -> CL_NetGameEventValue
+  CL_Palette -> CL_Color
+  CL_PerlinNoise -> CL_PixelBuffer
+  CL_PrimitivesArray -> CL_Type
+  CL_PrimitivesArray -> CL_Vec3f
+  CL_Sprite -> CL_Angle
+  CL_Sprite -> CL_Colorf
+  CL_Sprite -> CL_GraphicContext
+  CL_Sprite -> CL_IODevice
+  CL_Sprite -> CL_Point
+  CL_Sprite -> CL_Size
+  CL_Sprite -> CL_Type
+  CL_Sprite -> CL_VirtualDirectory
+  CL_TCPConnection -> CL_IODevice
+  CL_TCPConnection -> CL_SocketName
+  CL_TCPListen -> CL_SocketName
+  CL_TCPListen -> CL_TCPConnection
+  CL_UDPSocket -> CL_SocketName
+  CL_XMLTokenizer -> CL_File
+  CL_XMLTokenizer -> CL_XMLToken
+}

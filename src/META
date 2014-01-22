@@ -1,0 +1,44 @@
+name = "clanlib"
+description = "bindings to the ClanLib library"
+
+archive(byte) = "clanlib_core.cma"
+archive(native) = "clanlib_core.cmxa"
+archive(plugin,byte) = "clanlib_core.cma"
+archive(plugin,native) = "clanlib_core.cmxs"
+
+package "display" (
+  description = "Display module"
+  requires = "clanlib"
+  archive(byte) = "clanlib_display.cma"
+  archive(native) = "clanlib_display.cmxa"
+  archive(plugin,byte) = "clanlib_display.cma"
+  archive(plugin,native) = "clanlib_display.cmxs"
+)
+
+package "gl" (
+  description = "GL module"
+  requires = "clanlib"
+  archive(byte) = "clanlib_gl.cma"
+  archive(native) = "clanlib_gl.cmxa"
+  archive(plugin,byte) = "clanlib_gl.cma"
+  archive(plugin,native) = "clanlib_gl.cmxs"
+)
+
+package "net" (
+  description = "Net module"
+  requires = "clanlib"
+  archive(byte) = "clanlib_net.cma"
+  archive(native) = "clanlib_net.cmxa"
+  archive(plugin,byte) = "clanlib_net.cma"
+  archive(plugin,native) = "clanlib_net.cmxs"
+)
+
+package "sound" (
+  description = "Sound module"
+  requires = "clanlib"
+  archive(byte) = "clanlib_sound.cma"
+  archive(native) = "clanlib_sound.cmxa"
+  archive(plugin,byte) = "clanlib_sound.cma"
+  archive(plugin,native) = "clanlib_sound.cmxs"
+)
+

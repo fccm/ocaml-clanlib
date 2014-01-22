@@ -1,0 +1,10 @@
+<root>
+  <!-- Just a test XML sample -->
+  <item name='e1' param='1' />
+  <item name='e2' param='2' />
+  <item>
+    <subel>Sub-A</subel>
+    <subel>Sub-B</subel>
+    <subel>Sub-C</subel>
+  </item>
+</root>

@@ -1,0 +1,11 @@
+CLANWHERE="`sh whereis_clan.sh`"
+vim \
+  CL_InputEventQueue.ml \
+  CL_InputEventQueue.mli \
+  CL_InputEventQueue_stub.cpp \
+  CL_InputEventQueue_stub.hpp \
+  $CLANWHERE/ClanLib/Display/Window/input_context.h \
+  $CLANWHERE/ClanLib/Display/Window/input_device.h \
+  $CLANWHERE/ClanLib/Display/Window/input_event.h \
+  $CLANWHERE/ClanLib/Display/Window/input_state.h \
+  *.cpp *.hpp

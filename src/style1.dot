@@ -1,0 +1,13 @@
+digraph g {
+    graph [
+        rankdir = LR
+        bgcolor= grey40
+    ]
+    node [
+        fontsize = "10"
+        fillcolor = grey60
+        color = green
+        shape = box
+        style = "rounded,filled"
+        penwidth = 1.2
+    ]

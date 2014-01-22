@@ -1,0 +1,9 @@
+CLANWHERE="`sh whereis_clan.sh`"
+vim \
+  CL_PixelFormat.ml \
+  CL_PixelFormat.mli \
+  CL_PixelFormat_stub.cpp \
+  CL_PixelFormat_stub.hpp \
+  $CLANWHERE/ClanLib/Display/Image/pixel_format.h \
+  CL_PixelFormatType_stub.hpp \
+  *.cpp *.hpp
