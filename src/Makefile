@@ -7,7 +7,7 @@
 
 OCAML := ocaml
 CXX_PARAMS := -Wall -Werror
-CXX := g++ -g $(CXX_PARAMS) -fPIC -std=c++0x
+CXX := g++ -g -fPIC -std=c++0x
 CXX_MM = g++ -MM -std=c++0x $(CL_INC)
 OCAMLOPT_PARAMS := -g -w A -warn-error A -ccopt "$(CXX_PARAMS)"
 OCAMLOPT := ocamlopt $(OCAMLOPT_PARAMS)
@@ -443,7 +443,15 @@ clanlib_net.cmxa: dllclan_net_stubs.so $(MOD_CLANLIB_NETWORK_CMX)
 
 
 %.o: %.cpp cl_caml_incs.hpp
+	$(CXX) $(CXX_PARAMS) -c $(OCAML_INC) $(CL_INC) $<
+
+# don't use -Wall -Werror for these files:
+
+CL_NetGameClient_stub.o: CL_NetGameClient_stub.cpp
 	$(CXX) -c $(OCAML_INC) $(CL_INC) $<
+CL_NetGameServer_stub.o: CL_NetGameServer_stub.cpp
+	$(CXX) -c $(OCAML_INC) $(CL_INC) $<
+
 
 %.cmi: %.mli
 	$(OCAMLC) -c -o $@ $<
