@@ -1,0 +1,13 @@
+_*
+*~
+*.o
+*.a
+*.cmi
+*.cmx
+*.cmxa
+*.cmxs
+*.cmo
+*.cma
+*.so
+src/cxx_depend.mk
+src/ml_depend.mk
