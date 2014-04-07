@@ -1,9 +1,13 @@
 # Makefile for ocaml-clanlib
 # Copyright (C) 2013 Florent Monnier (monnier dot florent on gmail)
-# Code provided under MIT license:
-# See the file MIT_License.txt or this URL:
-# http://opensource.org/licenses/mit-license.php
-# This software is provided "AS IS", without warranty of any kind.
+# 
+# This makefile is provided 'as-is', without any express or implied warranty.
+# In no event will the authors be held liable for any damages arising from the
+# use of this makefile.
+# 
+# Permission is granted to anyone to use this makefile for any purpose,
+# including commercial applications, and to alter it and redistribute it
+# freely.
 
 OCAML := ocaml
 CXX_PARAMS := -Wall -Werror
