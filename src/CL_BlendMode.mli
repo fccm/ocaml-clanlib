@@ -26,17 +26,17 @@ external get_blend_function_dest_alpha : t -> CL_BlendFunc.t
 external is_blend_enabled : t -> bool
   = "caml_CL_BlendMode_is_blend_enabled"
 external enable_blending : t -> bool -> unit
-  = "caml_CL_BlendMode_enable_blending" "noalloc"
+  = "caml_CL_BlendMode_enable_blending" [@@noalloc]
 external set_blend_color : t -> CL_Colorf.t -> unit
-  = "caml_CL_BlendMode_set_blend_color" "noalloc"
+  = "caml_CL_BlendMode_set_blend_color" [@@noalloc]
 external set_blend_equation :
   t -> color:CL_BlendEquation.t -> alpha:CL_BlendEquation.t -> unit
-  = "caml_CL_BlendMode_set_blend_equation" "noalloc"
+  = "caml_CL_BlendMode_set_blend_equation" [@@noalloc]
 external set_blend_function :
   t ->
   src:CL_BlendFunc.t ->
   dest:CL_BlendFunc.t ->
   src_alpha:CL_BlendFunc.t ->
   dest_alpha:CL_BlendFunc.t -> unit
-  = "caml_CL_BlendMode_set_blend_function" "noalloc"
+  = "caml_CL_BlendMode_set_blend_function" [@@noalloc]
 

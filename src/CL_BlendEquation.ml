@@ -18,7 +18,7 @@ let to_string = function
   | Max               -> "max"
 
 let of_string s =
-  match String.lowercase s with
+  match String.lowercase_ascii s with
   | "add"               -> Add
   | "subtract"          -> Subtract
   | "reverse_subtract"  -> Reverse_subtract

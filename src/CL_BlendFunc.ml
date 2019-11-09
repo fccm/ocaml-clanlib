@@ -38,7 +38,7 @@ let to_string = function
   | One_minus_constant_alpha  -> "blend_one_minus_constant_alpha"
 
 let of_string s =
-  match String.lowercase s with
+  match String.lowercase_ascii s with
   | "blend_zero"                      -> Zero
   | "blend_one"                       -> One
   | "blend_dest_color"                -> Dest_color

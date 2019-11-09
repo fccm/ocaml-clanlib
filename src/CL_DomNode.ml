@@ -58,17 +58,17 @@ module Exceptionless = struct
     with Not_found -> None
 end
 
-external is_element : 'a t -> bool = "caml_CL_DomNode_is_element" "noalloc"
-external is_attr : 'a t -> bool = "caml_CL_DomNode_is_attr" "noalloc"
-external is_text : 'a t -> bool = "caml_CL_DomNode_is_text" "noalloc"
-external is_cdata_section : 'a t -> bool = "caml_CL_DomNode_is_cdata_section" "noalloc"
-external is_entity_reference : 'a t -> bool = "caml_CL_DomNode_is_entity_reference" "noalloc"
-external is_entity : 'a t -> bool = "caml_CL_DomNode_is_entity" "noalloc"
-external is_processing_instruction : 'a t -> bool = "caml_CL_DomNode_is_processing_instruction" "noalloc"
-external is_comment : 'a t -> bool = "caml_CL_DomNode_is_comment" "noalloc"
-external is_document : 'a t -> bool = "caml_CL_DomNode_is_document" "noalloc"
-external is_document_type : 'a t -> bool = "caml_CL_DomNode_is_document_type" "noalloc"
-external is_document_fragment : 'a t -> bool = "caml_CL_DomNode_is_document_fragment" "noalloc"
-external is_notation : 'a t -> bool = "caml_CL_DomNode_is_notation" "noalloc"
-external has_attributes : 'a t -> bool = "caml_CL_DomNode_has_attributes" "noalloc"
-external has_child_nodes : 'a t -> bool = "caml_CL_DomNode_has_child_nodes" "noalloc"
+external is_element : 'a t -> bool = "caml_CL_DomNode_is_element" [@@noalloc]
+external is_attr : 'a t -> bool = "caml_CL_DomNode_is_attr" [@@noalloc]
+external is_text : 'a t -> bool = "caml_CL_DomNode_is_text" [@@noalloc]
+external is_cdata_section : 'a t -> bool = "caml_CL_DomNode_is_cdata_section" [@@noalloc]
+external is_entity_reference : 'a t -> bool = "caml_CL_DomNode_is_entity_reference" [@@noalloc]
+external is_entity : 'a t -> bool = "caml_CL_DomNode_is_entity" [@@noalloc]
+external is_processing_instruction : 'a t -> bool = "caml_CL_DomNode_is_processing_instruction" [@@noalloc]
+external is_comment : 'a t -> bool = "caml_CL_DomNode_is_comment" [@@noalloc]
+external is_document : 'a t -> bool = "caml_CL_DomNode_is_document" [@@noalloc]
+external is_document_type : 'a t -> bool = "caml_CL_DomNode_is_document_type" [@@noalloc]
+external is_document_fragment : 'a t -> bool = "caml_CL_DomNode_is_document_fragment" [@@noalloc]
+external is_notation : 'a t -> bool = "caml_CL_DomNode_is_notation" [@@noalloc]
+external has_attributes : 'a t -> bool = "caml_CL_DomNode_has_attributes" [@@noalloc]
+external has_child_nodes : 'a t -> bool = "caml_CL_DomNode_has_child_nodes" [@@noalloc]

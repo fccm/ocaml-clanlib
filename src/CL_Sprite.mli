@@ -51,29 +51,29 @@ external delete : t -> unit = "caml_CL_Sprite_delete"
 
 
 
-external set_angle : t -> angle:CL_Angle.t -> unit = "caml_CL_Sprite_set_angle" "noalloc"
-external set_angle_pitch : t -> angle:CL_Angle.t -> unit = "caml_CL_Sprite_set_angle_pitch" "noalloc"
-external set_angle_yaw : t -> angle:CL_Angle.t -> unit = "caml_CL_Sprite_set_angle_yaw" "noalloc"
-external rotate : t -> angle:CL_Angle.t -> unit = "caml_CL_Sprite_rotate" "noalloc"
-external rotate_pitch : t -> angle:CL_Angle.t -> unit = "caml_CL_Sprite_rotate_pitch" "noalloc"
-external rotate_yaw : t -> angle:CL_Angle.t -> unit = "caml_CL_Sprite_rotate_yaw" "noalloc"
-external set_base_angle : t -> angle:CL_Angle.t -> unit = "caml_CL_Sprite_set_base_angle" "noalloc"
-external set_scale : t -> x:float -> y:float -> unit = "caml_CL_Sprite_set_scale" "noalloc"
-external set_alpha : t -> alpha:float -> unit = "caml_CL_Sprite_set_alpha" "noalloc"
-external set_frame : t -> frame:CL_Type.uint -> unit = "caml_CL_Sprite_set_frame" "noalloc"
-external set_delay : t -> delay_ms:int -> unit = "caml_CL_Sprite_set_delay" "noalloc"
-external set_frame_delay : t -> frame:int -> delay_ms:int -> unit = "caml_CL_Sprite_set_frame_delay" "noalloc"
-external set_frame_offset : t -> frame:int -> offset:CL_Point.t -> unit = "caml_CL_Sprite_set_frame_offset" "noalloc"
-external set_id : t -> id:int -> unit = "caml_CL_Sprite_set_id" "noalloc"
-external finish : t -> unit = "caml_CL_Sprite_finish" "noalloc"
-external restart : t -> unit = "caml_CL_Sprite_restart" "noalloc"
+external set_angle : t -> angle:CL_Angle.t -> unit = "caml_CL_Sprite_set_angle" [@@noalloc]
+external set_angle_pitch : t -> angle:CL_Angle.t -> unit = "caml_CL_Sprite_set_angle_pitch" [@@noalloc]
+external set_angle_yaw : t -> angle:CL_Angle.t -> unit = "caml_CL_Sprite_set_angle_yaw" [@@noalloc]
+external rotate : t -> angle:CL_Angle.t -> unit = "caml_CL_Sprite_rotate" [@@noalloc]
+external rotate_pitch : t -> angle:CL_Angle.t -> unit = "caml_CL_Sprite_rotate_pitch" [@@noalloc]
+external rotate_yaw : t -> angle:CL_Angle.t -> unit = "caml_CL_Sprite_rotate_yaw" [@@noalloc]
+external set_base_angle : t -> angle:CL_Angle.t -> unit = "caml_CL_Sprite_set_base_angle" [@@noalloc]
+external set_scale : t -> x:float -> y:float -> unit = "caml_CL_Sprite_set_scale" [@@noalloc]
+external set_alpha : t -> alpha:float -> unit = "caml_CL_Sprite_set_alpha" [@@noalloc]
+external set_frame : t -> frame:CL_Type.uint -> unit = "caml_CL_Sprite_set_frame" [@@noalloc]
+external set_delay : t -> delay_ms:int -> unit = "caml_CL_Sprite_set_delay" [@@noalloc]
+external set_frame_delay : t -> frame:int -> delay_ms:int -> unit = "caml_CL_Sprite_set_frame_delay" [@@noalloc]
+external set_frame_offset : t -> frame:int -> offset:CL_Point.t -> unit = "caml_CL_Sprite_set_frame_offset" [@@noalloc]
+external set_id : t -> id:int -> unit = "caml_CL_Sprite_set_id" [@@noalloc]
+external finish : t -> unit = "caml_CL_Sprite_finish" [@@noalloc]
+external restart : t -> unit = "caml_CL_Sprite_restart" [@@noalloc]
 
-external set_play_loop : t -> unit = "caml_CL_Sprite_set_play_loop" "noalloc"
-external set_play_pingpong : t -> unit = "caml_CL_Sprite_set_play_pingpong" "noalloc"
-external set_play_backward : t -> unit = "caml_CL_Sprite_set_play_backward" "noalloc"
-external unset_play_loop : t -> unit = "caml_CL_Sprite_unset_play_loop" "noalloc"
-external unset_play_pingpong : t -> unit = "caml_CL_Sprite_unset_play_pingpong" "noalloc"
-external unset_play_backward : t -> unit = "caml_CL_Sprite_unset_play_backward" "noalloc"
+external set_play_loop : t -> unit = "caml_CL_Sprite_set_play_loop" [@@noalloc]
+external set_play_pingpong : t -> unit = "caml_CL_Sprite_set_play_pingpong" [@@noalloc]
+external set_play_backward : t -> unit = "caml_CL_Sprite_set_play_backward" [@@noalloc]
+external unset_play_loop : t -> unit = "caml_CL_Sprite_unset_play_loop" [@@noalloc]
+external unset_play_pingpong : t -> unit = "caml_CL_Sprite_unset_play_pingpong" [@@noalloc]
+external unset_play_backward : t -> unit = "caml_CL_Sprite_unset_play_backward" [@@noalloc]
 
 
 external is_null : t -> bool = "caml_CL_Sprite_is_null"

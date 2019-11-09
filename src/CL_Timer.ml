@@ -6,5 +6,5 @@ external delete : t -> unit = "caml_CL_Timer_delete"
 
 external is_repeating : t -> bool = "caml_CL_Timer_is_repeating"
 external get_timeout : t -> uint = "caml_CL_Timer_get_timeout"
-external start : t -> timeout:uint -> repeat:bool -> unit = "caml_CL_Timer_start" "noalloc"
-external stop : t -> unit = "caml_CL_Timer_stop" "noalloc"
+external start : t -> timeout:uint -> repeat:bool -> unit = "caml_CL_Timer_start" [@@noalloc]
+external stop : t -> unit = "caml_CL_Timer_stop" [@@noalloc]

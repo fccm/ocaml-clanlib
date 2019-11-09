@@ -19,8 +19,8 @@ external set_strikeout : t -> unit = "caml_CL_FontDescription_set_strikeout"
 external set_fixed_pitch : t -> unit = "caml_CL_FontDescription_set_fixed_pitch"
 external set_anti_alias : t -> unit = "caml_CL_FontDescription_set_anti_alias"
 
-external set_not_italic : t -> unit = "caml_CL_FontDescription_set_not_italic" "noalloc"
-external set_not_underline : t -> unit = "caml_CL_FontDescription_set_not_underline" "noalloc"
-external set_not_strikeout : t -> unit = "caml_CL_FontDescription_set_not_strikeout" "noalloc"
-external set_not_fixed_pitch : t -> unit = "caml_CL_FontDescription_set_not_fixed_pitch" "noalloc"
-external set_not_anti_alias : t -> unit = "caml_CL_FontDescription_set_not_anti_alias" "noalloc"
+external set_not_italic : t -> unit = "caml_CL_FontDescription_set_not_italic" [@@noalloc]
+external set_not_underline : t -> unit = "caml_CL_FontDescription_set_not_underline" [@@noalloc]
+external set_not_strikeout : t -> unit = "caml_CL_FontDescription_set_not_strikeout" [@@noalloc]
+external set_not_fixed_pitch : t -> unit = "caml_CL_FontDescription_set_not_fixed_pitch" [@@noalloc]
+external set_not_anti_alias : t -> unit = "caml_CL_FontDescription_set_not_anti_alias" [@@noalloc]

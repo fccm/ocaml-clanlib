@@ -9,4 +9,4 @@ type uint = int
 (** wraps an unsigned int in the ClanLib API *)
 
 external are_pointers_boxed : unit -> bool
-  = "caml_are_pointers_boxed" "noalloc"
+  = "caml_are_pointers_boxed" [@@noalloc]
