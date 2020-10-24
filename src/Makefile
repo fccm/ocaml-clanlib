@@ -28,7 +28,7 @@ PREFIX := $(OCAML_DIR)/$(BINDING_DIR)
 DLL_PREFIX := $(PREFIX)
 VERSION := $(shell date --iso)
 
-CL_VER := 2.1
+CL_VER := 2.3
 CLV_SUF := -$(CL_VER)
 
 # Default is: CL_INC_DIR=/usr/include/ClanLib-2.1
