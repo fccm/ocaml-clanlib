@@ -11,3 +11,4 @@ _*
 *.so
 src/cxx_depend.mk
 src/ml_depend.mk
+src/doc/
