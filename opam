@@ -1,0 +1,44 @@
+opam-version: "2.0"
+name: "clanlib"
+maintainer: "Florent Monnier <monnier.florent@gmail.com>"
+authors: [
+  "Florent Monnier"
+]
+license: "restrictionless Zlib"
+homepage: "https://github.com/fccm/ocaml-clanlib"
+
+bug-reports: "https://github.com/fccm/ocaml-clanlib/issues"
+dev-repo: "git+https://github.com/fccm/ocaml-clanlib.git"
+
+doc: "https://fccm.github.io/ocaml-clanlib/"
+
+tags: [ "bindings" "graphics" "audio" "multimedia" "gamedev" "opengl" "cross-platform" ]
+
+synopsis: "Bindings to the ClanLib library"
+
+description: """
+OCaml bindings to the ClanLib library.
+
+ClanLib is a game SDK providing interfaces for 2D graphics, input, sound,
+resources, networking, GUI, OpenGL, and more. The goal is to provide a game
+SDK that does all the dirty work that all modern games need to implement
+anyway, thus making the game developer concentrate on the gameplay instead
+of reinventing the wheel over and over again.
+
+This version of the bindings is known to work with ClanLib versions
+2.1.2 or 2.3.7
+"""
+depends: [
+  "ocaml"
+  "ocamlfind" {build}
+]
+build: [
+  [make "-C" "src"]
+]
+install: [
+  [make "-C" "src" "findinstall"]
+]
+depexts: [
+  ["libclanlib-dev"] {os-family = "debian"}
+  ["libclanlib2.3-devel"] {os-distribution = "mageia"}
+]
