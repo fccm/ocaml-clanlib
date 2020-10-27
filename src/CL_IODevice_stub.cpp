@@ -86,11 +86,11 @@ caml_CL_IODevice_receive(value io, value data, value receive_all, value unit)
     int r;
     if (receive_all == Val_none)
         r = CL_IODevice_val(io)->receive(
-                String_val(data),
+                Bytes_val(data),
                 caml_string_length(data));
     else
         r = CL_IODevice_val(io)->receive(
-                String_val(data),
+                Bytes_val(data),
                 caml_string_length(data),
                 Bool_val(Some_val(receive_all)));
 

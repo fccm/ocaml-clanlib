@@ -29,7 +29,7 @@ external set_system_mode : 'a t -> unit
 external send : 'a t -> data:string -> ?receive_all:bool -> unit -> int
   = "caml_CL_IODevice_send"
 
-external receive : 'a t -> data:string -> ?receive_all:bool -> unit -> int
+external receive : 'a t -> data:bytes -> ?receive_all:bool -> unit -> int
   = "caml_CL_IODevice_receive"
 
 type seek_mode =

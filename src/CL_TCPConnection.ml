@@ -13,7 +13,7 @@ external send :
   = "caml_CL_TCPConnection_send"
 
 external receive :
-  t -> data:string -> ?receive_all:bool -> unit -> int
+  t -> data:bytes -> ?receive_all:bool -> unit -> int
   = "caml_CL_TCPConnection_receive"
 
 external disconnect_graceful : conn:t -> unit

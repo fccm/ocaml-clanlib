@@ -18,12 +18,12 @@ CAMLextern_C value
 caml_CL_String16_init(value str)
 {
     /*
-    char *c_str = String_val(str);
+    const char *c_str = String_val(str);
     unsigned int length = caml_string_length(str);
     CL_String16 *cls = new CL_String16(c_str, length);
     return Val_CL_String16(cls);
     */
-    char *c_str = String_val(str);
+    const char *c_str = String_val(str);
     CL_String16 *cls = new CL_String16(c_str);
     return Val_CL_String16(cls);
 }
@@ -39,7 +39,7 @@ caml_CL_String16_delete(value cls)
 CAMLextern_C value
 caml_CL_String16_append(value cls, value str)
 {
-    char *c_str = String_val(str);
+    const char *c_str = String_val(str);
     CL_String16_val(cls)->append(c_str);
     return Val_unit;
 }

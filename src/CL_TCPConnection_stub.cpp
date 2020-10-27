@@ -62,11 +62,11 @@ caml_CL_TCPConnection_receive(
     int n;
     if (receive_all == Val_none)
         n = CL_TCPConnection_val(conn)->receive(
-                String_val(data),
+                Bytes_val(data),
                 caml_string_length(data) - 1);
     else
         n = CL_TCPConnection_val(conn)->receive(
-                String_val(data),
+                Bytes_val(data),
                 caml_string_length(data) - 1,
                 Bool_val(Some_val(receive_all)));
     return Val_int(n);
