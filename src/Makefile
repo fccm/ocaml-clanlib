@@ -487,7 +487,7 @@ doc: $(CLANLIB_MLI_FILES) $(CLANLIB_CMI_FILES)
 
 .PHONY: findinstall
 findinstall:
-	ocamlfind install clanlib META *.cma *.cmxa *.cmi *.mli *.so *.a
+	ocamlfind install clanlib META *.cma *.cmxa *.cmx *.cmi *.mli *.so *.a
 
 
 # Dependency visualisation:
