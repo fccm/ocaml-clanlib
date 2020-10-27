@@ -1,5 +1,5 @@
 # Makefile for ocaml-clanlib
-# Copyright (C) 2013 Florent Monnier (monnier dot florent on gmail)
+# Copyright (C) 2013 Florent Monnier (monnier dot florent at gmail)
 # 
 # This makefile is provided 'as-is', without any express or implied warranty.
 # In no event will the authors be held liable for any damages arising from the
@@ -79,15 +79,20 @@ CL_LIB_NETWORK  := $(shell PKG_CONFIG_PATH="$(PKG_CONF_DIR)" $(PKG_CONF) --cflag
 LD_LIBS  := -lpthread -lstdc++
 
 
-.PHONY: all cma opt cmxs
-all: opt
+.PHONY: all cma cmxa cmxs byte opt
+
+all: opt byte
+
+opt: cmxa
+byte: cma
+
 cma: \
   clanlib_core.cma \
   clanlib_display.cma \
   clanlib_gl.cma \
   clanlib_sound.cma \
   clanlib_net.cma
-opt: \
+cmxa: \
   clanlib_core.cmxa \
   clanlib_display.cmxa \
   clanlib_gl.cmxa \
